@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Montserrat";
-	src: url(Inter/static/Montserrat-Regular.ttf);
+	src: url(Montserrat/static/Montserrat-Regular.ttf);
 }
 
 *, *::before, *::after {
@@ -8,7 +8,6 @@
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
-  font-family: "Montserrat";
 }
 
 body {
@@ -20,6 +19,7 @@ body {
       width: 100vw;
       height: 100vh;
       display: flex;
+      font-family: "Montserrat";
     }
 
     section:first-child {
