@@ -1,0 +1,126 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url(Montserrat/static/Montserrat-Regular.ttf);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+  height: 100vh;
+  background-color: #F8F3E6;
+  align-content: space-around;
+}
+
+header {
+  border-bottom: solid 1px #427a5b;
+  display: flex;
+	justify-content: flex-start;
+  background-color: #b4cd93;
+}
+
+header > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header > section:first-child {
+  font-size: 50px;
+  margin: 10px 75px 10px 30px;
+  flex-shrink: 0;
+  color: #427a5b;
+    text-transform: uppercase;
+}
+
+header > section:nth-child(2) {
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+}
+
+header > section:nth-child(2) a {
+	color: #403f3f;
+  text-decoration: none;
+  margin-right: 60px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 35px;
+}
+
+main > section:first-child {
+	flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1 1 0;
+}
+
+main > section:first-child img {
+	height: 100vh;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+footer {
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer > section:nth-of-type(2) {
+  white-space: nowrap;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 491px;
+}
+
+footer img {
+	width: 95px;
+  height: 60px;
+  border: 1px #b4cd93 solid;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.active {
+  transition: border .4s ease;
+  border: 1px black solid;
+}
+
+#left-button, #right-button {
+  background-color: #F8F3E6;
+  color: #48120E;
+  border: none;
+  border-radius: 50px;
+  width: 4vw;
+  padding: 0 4px 4px 3px;
+  font-size: 3vw;
+  opacity: 0.6;
+  transform: scaleY(200%);
+  cursor: pointer;
+}
+
+.whocares {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  padding: 30px 0 10px 0;
+  font-size: 13px;
+    }
