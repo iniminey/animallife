@@ -1,0 +1,110 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url(Inter/static/Montserrat-Regular.ttf);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Montserrat";
+}
+
+body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+    }
+
+    section:first-child {
+      display: flex;
+      flex-direction: column;
+      flex: 40%;
+      background-color: #F8F3E6;
+      z-index: 2;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      font-size: 25px;
+      color: #b4cd93;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+    }
+
+    p {
+      color: #427a5b;
+      margin: 25px 0;
+      font-size: 15px;
+    }
+
+.button {
+  color: #427a5b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button:active {
+  color: #48120E;
+}
+
+.flex-container {
+  z-index: 3;
+  width: 85%;
+  height: auto;
+}
+
+.wrapper {
+  bottom: 12px;
+  position: absolute;
+}
+
+.wrapper img {
+ width: 20px;
+ height: auto;
+  opacity: 0.6;
+}
+
+    section:last-child {
+      flex: 60%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    section:last-child img {
+      flex: 1.5;
+      width: 101%;
+      height: 101%;
+      object-fit: cover;
+      object-position: center;
+      z-index: 1;
+    }
+
+    section:last-child > * {
+      animation: 12s autoplay6 infinite ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.0;
+    }
+
+    @keyframes autoplay6 {
+      0%, 37.33%, 100% { opacity: 0.0; }
+      4%, 33.33% { opacity: 1.0; }
+    }
+
+    section:last-child > *:nth-child(1) { animation-delay: 0s; }
+    section:last-child > *:nth-child(2) { animation-delay: 4s; }
+    section:last-child > *:nth-child(3) { animation-delay: 8s; }
+    section:last-child > *:nth-child(4) { animation-delay: 12s; }
+    section:last-child > *:nth-child(5) { animation-delay: 16s; }
